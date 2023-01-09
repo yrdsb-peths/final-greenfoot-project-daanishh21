@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * The space world in which the rocket will fight off asteroids. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (daanish) 
+ * @version (January 2023)
  */
 public class MyWorld extends World
 {
@@ -16,6 +16,10 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
+        super(600, 600, 1);
+        
+        Rocket rocket = new Rocket();
+        addObject(rocket, 300, 300);
+        
     }
 }
