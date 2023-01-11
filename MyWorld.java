@@ -8,18 +8,25 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
+    
     public MyWorld()
     {    
-        // adding rocket to the world
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        
         super(600, 600, 1);
         
         Rocket rocket = new Rocket();
-        addObject(rocket, 300, 300);
-        
+        addObject(rocket, 300, 450);
+    }
+    
+    public void gameOver()
+    {
+        Label gameOverLabel = new Label("Game Over", 100);
+        addObject(gameOverLabel, 300, 200);
     }
 }
