@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class asteroid here.
+ * The objectile that will be thrown down at the spaceship.
  * 
- * @author (your name) 
+ * @author (daanish) 
  * @version (a version number or a date)
  */
 public class asteroid extends Actor
 {
-    int speed = 1;
+    int speed = 10;
     
     public void act()
     {

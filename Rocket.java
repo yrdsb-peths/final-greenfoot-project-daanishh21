@@ -17,6 +17,18 @@ public class Rocket extends Actor
     {
         setImage(myGif.getCurrentImage() );
         moveTheRocket();
+        
+        if (Greenfoot.isKeyDown("space"))
+        {
+            shoot();
+        }
+
+    }
+    
+    private void shoot()
+    {
+        Blaster blaster = new Blaster();
+        getWorld().addObject(blaster, getX(), getY());
     }
     
     public Rocket()
@@ -26,6 +38,8 @@ public class Rocket extends Actor
         setImage(image);
     }
     
+    
+    // eat the apple and spawns a  new apple 
     
     
     public void moveTheRocket()
@@ -67,7 +81,8 @@ public class Rocket extends Actor
         {
             setLocation(getX(),getY() + 8);
         }
-        
+
     }
+    
     
 }
