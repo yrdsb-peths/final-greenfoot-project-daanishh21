@@ -25,23 +25,14 @@ public class Rocket extends Actor
 
     }
     
+    // shooting the projectile
     private void shoot()
     {
         Blaster blaster = new Blaster();
         getWorld().addObject(blaster, getX(), getY());
     }
     
-    public Rocket()
-    {
-        GreenfootImage image = getImage();  
-        image.scale(image.getWidth() - 150, image.getHeight() - 150);
-        setImage(image);
-    }
-    
-    
-    // eat the apple and spawns a  new apple 
-    
-    
+    // casual movement for the rocket at the speed of 8.
     public void moveTheRocket()
     {
         if(Greenfoot.isKeyDown("right"))
@@ -63,7 +54,6 @@ public class Rocket extends Actor
         }
         
         // added movement controls for "wasd" keys along with arrow keys
-        
         if(Greenfoot.isKeyDown("d"))
         {
             setLocation(getX() + 8,getY());

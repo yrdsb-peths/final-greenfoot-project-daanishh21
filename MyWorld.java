@@ -29,7 +29,6 @@ public class MyWorld extends World
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
         createAsteroid();
-        
     }
     
     public void gameOver()
@@ -59,4 +58,5 @@ public class MyWorld extends World
         }
     }
     
+
 }

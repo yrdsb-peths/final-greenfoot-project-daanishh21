@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Blaster here.
+ * The projectile that will be shooting out of the rocket.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (daanish) 
+ * @version (January 2023)
  */
 public class Blaster extends Actor
 {
@@ -14,10 +14,21 @@ public class Blaster extends Actor
      */
     public void act()
     {
-        move(10);
+        setLocation(getX(),getY() - 20);
         blast();
+        Vanish();
     }
     
+    // makes the blast vanish from the top of the screen so that the game is infinite.
+    public void Vanish()
+    {
+        if(getY() == 0)
+        {
+            getWorld().removeObject(this);
+        }
+    }   
+    
+    // creates a loop in which one is destroyed and the next spawns.
     public void blast()
     {
         if(isTouching(asteroid.class))
