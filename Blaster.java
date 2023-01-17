@@ -37,7 +37,11 @@ public class Blaster extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createAsteroid();
             world.increaseScore();
+            // plays sound effect when hitting meteor
+            Greenfoot.playSound("Laser blast.mp3");
         }
     }
+    
+    
     
 }

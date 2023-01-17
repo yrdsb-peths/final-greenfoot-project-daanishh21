@@ -37,39 +37,39 @@ public class Rocket extends Actor
     {
         if(Greenfoot.isKeyDown("right"))
         {
-            setLocation(getX() + 8,getY());
+            setLocation(getX() + 9,getY());
         }
         if(Greenfoot.isKeyDown("left"))
         {
-            setLocation(getX() - 8,getY());
+            setLocation(getX() - 9,getY());
         }
         
         if(Greenfoot.isKeyDown("up"))
         {
-            setLocation(getX(),getY() - 8);
+            setLocation(getX(),getY() - 9);
         }
         if(Greenfoot.isKeyDown("down"))
         {
-            setLocation(getX(),getY() + 8);
+            setLocation(getX(),getY() + 9);
         }
         
         // added movement controls for "wasd" keys along with arrow keys
         if(Greenfoot.isKeyDown("d"))
         {
-            setLocation(getX() + 8,getY());
+            setLocation(getX() + 9,getY());
         }
         if(Greenfoot.isKeyDown("a"))
         {
-            setLocation(getX() - 8,getY());
+            setLocation(getX() - 9,getY());
         }
         
         if(Greenfoot.isKeyDown("w"))
         {
-            setLocation(getX(),getY() - 8);
+            setLocation(getX(),getY() - 9);
         }
         if(Greenfoot.isKeyDown("s"))
         {
-            setLocation(getX(),getY() + 8);
+            setLocation(getX(),getY() + 9);
         }
 
     }
