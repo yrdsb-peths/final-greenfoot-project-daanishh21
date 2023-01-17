@@ -34,6 +34,7 @@ public class Blaster extends Actor
         if(isTouching(asteroid.class))
         {
             removeTouching(asteroid.class);
+            // world constructor
             MyWorld world = (MyWorld) getWorld();
             world.createAsteroid();
             world.increaseScore();

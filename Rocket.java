@@ -15,7 +15,8 @@ public class Rocket extends Actor
      */
     public void act()
     {
-        setImage(myGif.getCurrentImage() );
+        // sets the gif image so that it works
+        setImage(myGif.getCurrentImage());
         moveTheRocket();
         
         if (Greenfoot.isKeyDown("space"))
